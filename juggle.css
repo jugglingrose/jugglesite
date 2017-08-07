@@ -1,0 +1,155 @@
+#landing{
+  background: url("tossLWeb.jpg") no-repeat center fixed;
+}
+
+/* class codes */
+.tealO{
+  background: rgba(74,221,172, 0.85);
+}
+
+.orangeO{
+  background: rgba(252,74,26, 0.85);
+}
+
+.vh{
+  height: 100vh;
+}
+
+/*MOBILE FIRST WITH BOOTSTRAP*/
+
+/* NAV */
+.push{
+  float: right;
+    width: 80%;
+    height: 100vh;
+
+}
+
+ul{
+  list-style-type: none;
+}
+
+ul li{
+  border: 1px solid #dfdce3;
+  background: white;
+
+}
+
+h1{
+  margin: 0 5%;
+  text-transform: uppercase;
+}
+
+ul li p{
+  font-size: 18px;
+  margin: 0 0 5% 5%;
+  color: gray;
+}
+
+ul li a{
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  margin: 1%;
+  padding: 20px;
+}
+
+ul li:last-child{
+  height: 100vh;
+}
+
+@media screen and (min-width: 480px){
+  .push{
+    width: 40%;
+  }
+}
+
+/*HEADER*/
+.head{
+  background: transparent;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+.bar{
+  background: transparent;
+  margin-top: 0;
+}
+.logo{
+  float: left;
+  margin-top: 7px;
+  color: #dfdce3;
+  font-size: 23px;
+}
+
+.icon-menu{
+  float: right;
+  width: 35px;
+  height: 23px;
+  margin-top: 7px;
+}
+
+header .icon-menu span{
+  width: 100%;
+  height: 3px;
+  background: #dfdce3;
+  display: block;
+}
+
+header .icon-menu span:nth-child(1){
+  margin-top: 0px;
+}
+
+header .icon-menu span:nth-child(2){
+  margin-top: 10px;
+}
+
+header .icon-menu span:nth-child(3){
+  margin-top: 10px;
+}
+
+/*landing page*/
+#enterA{
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 170%;
+  font-size: 25px;
+  color: #FC4A1A;
+}
+
+#enterB{
+  text-align: right;
+  text-transform: uppercase;
+  margin-top: 170%;
+  font-size: 25px;
+  color: #4ADDAC;
+}
+
+#RPanel{
+  float: right;
+}
+
+@media screen and (min-width: 480px){
+  .icon-menu {
+      float: right;
+      width: 35px;
+      height: 23px;
+      margin-top: 17px;
+  }
+  .logo{
+      font-size: 35px;
+  }
+
+  #enterA, #enterB{
+    margin-top: 130%;
+    font-size: 40px;
+  }
+
+  #enterA{
+    max-width: 85%;
+  }
+}
+
+@media screen and (min-width: 940px){
+
+}

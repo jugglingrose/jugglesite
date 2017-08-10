@@ -1,13 +1,30 @@
 /* NAV BAR SHOW/HIDE */
-$(document).ready(function(){
-  $('.push').hide();
-});
+var main = function() {
+  /* Push the body and the nav over by 285px over */
+  $('.icon-menu').click(function() {
+    $('.menu').animate({
+      right: "0"
+    }, 200);
 
-$(document).ready(function(){
-  $(".icon-menu").click(function(){
-    $(".push").animate({width:'toggle'},350);
-});
-});
+    $('body').animate({
+      right: "300px"
+    }, 200);
+  });
+
+  /* Then push them back */
+  $('.icon-close').click(function() {
+    $('.menu').animate({
+      right: "-1500px"
+    }, 200);
+
+    $('body').animate({
+      right: "0px"
+    }, 200);
+  });
+};
+
+
+$(document).ready(main);
 
 
 /*LANDING PAGE PANELS */

@@ -1,14 +1,46 @@
+body{
+  position: relative;
+}
+
 #landing{
   background: url("tossLWeb.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* class codes */
+.teal{
+  background: #4addac;
+}
+
+.orange{
+  background: #fc4a1a;
+}
+
+.yellow{
+  background: #f7b733;
+}
+
+.gray{
+  background: #dfdce3;
+}
+
 .tealO{
-  background: rgba(74,221,172, 0.85);
+  background: rgba(74,221,172, 0.90);
 }
 
 .orangeO{
-  background: rgba(252,74,26, 0.85);
+  background: rgba(252,74,26, 0.90);
+}
+
+.yellowO{
+  background: rgba(247,183,51, 0.90);
+}
+
+.grayO{
+  background: rgba(223,220,227, 0.90);
 }
 
 .vh{
@@ -17,59 +49,12 @@
 
 /*MOBILE FIRST WITH BOOTSTRAP*/
 
-/* NAV */
-.push{
-  float: right;
-    width: 80%;
-    height: 100vh;
-
-}
-
-ul{
-  list-style-type: none;
-}
-
-ul li{
-  border: 1px solid #dfdce3;
-  background: white;
-
-}
-
-h1{
-  margin: 0 5%;
-  text-transform: uppercase;
-}
-
-ul li p{
-  font-size: 18px;
-  margin: 0 0 5% 5%;
-  color: gray;
-}
-
-ul li a{
-  text-decoration: none;
-  color: black;
-  text-transform: capitalize;
-  margin: 1%;
-  padding: 20px;
-}
-
-ul li:last-child{
-  height: 100vh;
-}
-
-@media screen and (min-width: 480px){
-  .push{
-    width: 40%;
-  }
-}
-
 /*HEADER*/
 .head{
   background: transparent;
   position: fixed;
-  z-index: 1000;
   width: 100%;
+  z-index: 1000;
 }
 .bar{
   background: transparent;
@@ -108,6 +93,77 @@ header .icon-menu span:nth-child(3){
   margin-top: 10px;
 }
 
+/* FOOTER */
+
+footer{
+  text-align: center;
+}
+.social{
+  padding: 20px;
+}
+
+.social img{
+  height: 50px;
+}
+
+#copyright{
+  padding: 20px;
+}
+
+#copyright p{
+  font-size: 16px;
+  color: #dfdce3;
+}
+
+
+/* NAV */
+nav{
+  right: -300px;
+  position: fixed;
+  float: right;
+  width: 80%;
+  height: 100vh;
+  z-index: 2000;
+}
+
+ul{
+  list-style-type: none;
+}
+
+ul li{
+  border: 1px solid #dfdce3;
+  background: white;
+}
+
+ul li:nth-child(1){
+  padding: 20px;
+}
+
+h1{
+  margin: 0 5%;
+  text-transform: uppercase;
+}
+
+ul li p{
+  font-size: 18px;
+  margin: 0 0 5% 5%;
+  color: gray;
+}
+
+ul li a{
+  text-decoration: none;
+  color: black;
+  text-transform: capitalize;
+  margin: 1%;
+  padding: 20px;
+}
+
+ul li:last-child{
+  height: 100vh;
+}
+
+
+
 /*landing page*/
 #enterA{
   text-align: left;
@@ -129,7 +185,79 @@ header .icon-menu span:nth-child(3){
   float: right;
 }
 
+/* ABOUT */
+#about{
+  background: url("Images/tossLWeb.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.mission{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.mission h1{
+  padding: 5%;
+}
+
+.mission p{
+  padding: 0 0 5% 0;
+  font-size: 18px;
+}
+
+.bio{
+  width: 100%;
+  display: block;
+}
+
+.bio h2{
+  margin: 0;
+  padding: 0 0 5% 0;
+}
+
+.wrap{
+  text-align: center;
+}
+
+.bio img{
+  width: 75%;
+}
+
+/*MEDIA*/
+#carousel{
+  text-align:center;
+  padding-top: 40%;
+  padding-bottom: 20%;
+
+}
+
+#carousel h1{
+  color: #dfdce3;
+  font-size: 36px;
+  padding-bottom: 5%;
+}
+#myCarousel{
+  width: 80%;
+  margin: auto;
+}
+
+/* TABLETS */
+
 @media screen and (min-width: 480px){
+
+  /* NAV */
+  .push{
+    width: 40%;
+  }
+  nav{
+    right: -600px;
+  }
+
+  /* HEADER */
   .icon-menu {
       float: right;
       width: 35px;
@@ -140,6 +268,8 @@ header .icon-menu span:nth-child(3){
       font-size: 35px;
   }
 
+  /*Landing*/
+
   #enterA, #enterB{
     margin-top: 130%;
     font-size: 40px;
@@ -148,8 +278,85 @@ header .icon-menu span:nth-child(3){
   #enterA{
     max-width: 85%;
   }
+
+  /* ABOUT */
+  .bio{
+    column-span: 6;
+    display: inline-block;
+  }
+
+  .mission p{
+    padding: 0 0 5% 0;
+    font-size: 24px;
+  }
+  .bio{
+    width: 50%;
+    display: block;
+    float: left;
+  }
 }
 
-@media screen and (min-width: 940px){
+/*DESKTOP*/
+@media screen and (min-width: 780px){
+
+  /*header*/
+  #H{
+    width: 95%;
+  }
+
+  /*NAV */
+  nav{
+    right: -1500px;
+      width: 40%;
+  }
+
+
+  /*LANDING*/
+  #enterA{
+    margin-top: 50%;
+    font-size: 60px;
+  }
+
+  #enterB{
+    margin-top: 50%;
+    font-size: 60px;
+  }
+
+  /* ABOUT */
+
+  .bio{
+    width: 25%;
+  }
+
+  .mission h1{
+    font-size: 60px;
+  }
+
+  .mission p{
+    font-size: 30px;
+  }
+
+  .mission h2{
+    font-size: 50px;
+  }
+
+  footer{
+    height: 20vh;
+  }
+
+  #copyright p{
+    font-size: 20px;
+  }
+
+  /* MEDIA */
+  #carousel{
+    text-align:center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  #carousel h1{
+    font-size: 60px;
+  }
 
 }

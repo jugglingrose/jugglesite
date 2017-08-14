@@ -7,7 +7,7 @@ var main = function() {
     }, 200);
 
     $('body').animate({
-      right: "300px"
+      right: "260px"
     }, 200);
   });
 

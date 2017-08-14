@@ -2,7 +2,9 @@ body{
   position: relative;
 }
 
-#landing{
+/* class codes */
+
+.juggleBG{
   background: url("tossLWeb.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -10,7 +12,7 @@ body{
   background-size: cover;
 }
 
-/* class codes */
+
 .teal{
   background: #4addac;
 }
@@ -186,14 +188,6 @@ ul li:last-child{
 }
 
 /* ABOUT */
-#about{
-  background: url("Images/tossLWeb.jpg") no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-}
 
 .mission{
   text-align: center;
@@ -245,6 +239,64 @@ ul li:last-child{
   margin: auto;
 }
 
+/* CONTACT */
+form{
+  border: 2px solid #DFDCE3;
+  background: #fc4a1a;
+  width: 95%;
+  margin: auto;
+  font-size: 18px;
+  color: #DFdce3;
+  margin-bottom: 5%;
+}
+
+fieldset{
+  padding: 2%;
+}
+
+input{
+  padding: 2%;
+  width: 100%;
+}
+
+textarea{
+  width: 100%;
+}
+
+submit{
+  background:
+}
+
+/* Juggling Festival */
+#festival{
+  text-align: center;
+}
+
+#fest{
+  padding-top: 60px;
+}
+
+#fest h1{
+  padding: 10px;
+  font-size: 36px;
+}
+
+#fest p{
+  padding: 1%;
+}
+
+#guests{
+  font-size: 18px;
+}
+
+#guests h2{
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+#guests img{
+    width: 80px;
+}
 /* TABLETS */
 
 @media screen and (min-width: 480px){
@@ -293,6 +345,32 @@ ul li:last-child{
     width: 50%;
     display: block;
     float: left;
+  }
+
+  /*Festival */
+  #guests{
+    font-size: 30px;
+  }
+
+  #fest h1{
+    padding: 5%;
+    font-size: 60px;
+  }
+
+  #fest a{
+    font-size: 30px;
+  }
+
+  #guests h2{
+    font-size: 50px;
+  }
+
+  #guests img{
+    width: 200px;
+  }
+
+  #guests p{
+    font-size: 30px;
   }
 }
 
@@ -359,4 +437,30 @@ ul li:last-child{
     font-size: 60px;
   }
 
+  /*Festival */
+  #fest h1{
+    font-size: 60px;
+  }
+
+  #fest p{
+    font-size: 30px;
+  }
+
+
+  #guests img{
+    width: 300px;
+  }
 }
+
+/*
+@media screen and (min-width: 1024), screen and (min-height: 1366){
+  #enterA{
+    margin-top: 110%;
+    font-size: 60px;
+  }
+
+  #enterB{
+    margin-top: 110%;
+    font-size: 60px;
+  }
+}*/

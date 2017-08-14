@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name= "viewport" content="width=device-width, initial-scale=1">
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -22,8 +22,7 @@
 <link rel="stylesheet" href="juggle.css">
 
 </head>
-<body id="landing" class="juggleBG">
-  <!--NAV -->
+<body id="contact" class="juggleBG">
   <nav class="menu">
     <ul>
       <li class="icon-close">
@@ -35,7 +34,7 @@
         <p>Weekly Meet Up</p>
       </li>
       <li>
-        <a href="#">
+        <a href="fest.html">
         <h1>Juggling Festival</h1></a>
         <p>Yearly Festival</p>
       </li>
@@ -67,22 +66,49 @@
     </div>
   </header>
 
-<section>
-<div class="container-fluid">
-  <div class="row">
-    <a href="contact.html">
-    <div id="LPanel" class="col-xs-6 tealO vh">
-      <h1 id="enterA">Juggling Meet Up</<h1>
+  <section class="tealO container-fluid">
+    <div class="row">
+      <div class="col-xs-12 mission">
+        <h1>JOIN US!</h1>
+        <p>Our weekly meet ups occur every Thursday from 7pm - 10pm.  Meet ups are
+          held at the university gymnasium in downtown. Bring your own props or
+          borrow ours. Best of all, our meet ups are always free!</p>
+        <h2>CONTACT US</h2>
+      </div>
     </div>
-  </a>
-    <a href="fest.html">
-    <div id="RPanel" class="col-xs-6 orangeO vh">
-      <h1 id="enterB">Juggling Festival</h1>
-    </div>
-  </a>
-  </div>
-</div>
+
+    <form>
+      <fieldset>
+        Name:<br>
+        <input type="text" name="name" maxlength="20"><br>
+        Email:<br>
+        <input type="email" name="email" required><br>
+        Question/Comments:<br>
+        <textarea name="message" rows="6" placeholder="enter question or comment here"></textarea>
+      </br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
 </section>
 
+  <footer class="container-fluid">
+    <div class="row grayO">
+      <div class="col-xs-4 social">
+        <a href="#"><img src="Images/Facebook.png"/></a>
+      </div>
+      <div class="col-xs-4 social">
+        <a href="#"><img src="Images/Linkedin.png"/></a>
+      </div>
+      <div class="col-xs-4 social">
+        <a href="#"><img src="Images/Instagram.png"/></a>
+      </div>
+    </div>
+  <div class="row tealO">
+    <div id="copyright" class="col-xs-12">
+      <p><b>Designed and Developed by Corean Gonzales</b></p>
+      <p><b>Copyright 2017</b></p>
+    </div>
+  </div>
+  </footer>
 </body>
 </html>
